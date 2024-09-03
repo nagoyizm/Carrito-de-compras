@@ -14,16 +14,19 @@
 
 
 <body class="flex flex-col justify-center items-center ">
-<nav class="fixed h-8 bg-black w-full text-white top-0 font-mono flex flex-row justify-center align-center items-center z-10">
-    <h3 class="hidden md:block">Recibe dentro de las proximas 24 hrs dentro de santiago</h3>
-<div class="flex flex-row w-32 align-center sm:align-right  absolute right-32 justify-between">
-    <i class="fa-brands fa-x-twitter"></i>
-    <i class="fa-brands fa-discord"></i>
-    <i class="fa-brands fa-facebook"></i>
-    <i class="fa-brands fa-instagram"></i>
-    <i class="fa-solid fa-cart-shopping relative cursor-pointer" id="botonCarro"><div class="carroNav text-sm font-mono hidden rounded-full bg-red-800 absolute w-5 h-5 text-center"></div></i>
-</div>
-</nav>
+    <nav class="fixed h-8 bg-black w-full text-white top-0 font-mono flex justify-center items-center z-10">
+        <h3 class="hidden md:block">Recibe dentro de las próximas 24 hrs dentro de Santiago</h3>
+        <div class="flex w-full max-w-xs justify-between items-center absolute sm:w-32 sm:right-32 sm:justify-between">
+
+          <i class="fa-brands fa-discord"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-solid fa-cart-shopping relative cursor-pointer" id="botonCarro">
+            <div class="carroNav text-sm font-mono hidden rounded-full bg-red-800 absolute w-5 h-5 text-center"></div>
+          </i>
+        </div>
+      </nav>
+      
 
 <div id="overlay" class="overlay fixed top-0 right-0 w-full rounded-md h-full bg-black bg-opacity-50 hidden z-50">
     <div class="absolute top-0 right-0 w-100 h-30px bg-white shadow-lg flex flex-col items-center justify-between z-100 p-10 m-10">
@@ -37,8 +40,7 @@
 
 <header class="w-full h-52 bg-zinc-800 flex items-center justify-center sticky z-0 relative">
 <img class=" h-full w-full object-cover absolute opacity-75" src="./assets/img/banner.jpg" alt="">
-<div class="font-mono text-xl mt-20 absolute text-white tracking-widest sm:text-6xl sm:mt-0">MUSICLUB <i class="fa-solid fa-compact-disc"></i></div>
-
+<div class="font-mono mt-10 text-4xl absolute text-white tracking-widest sm:text-6xl sm:mt-0">MUSICLUB <i class="fa-solid fa-compact-disc"></i></div>
 <div class="flex flex-row align-center justify-center sm:right-10 sm:absolute">
 <input class="bg-white ml-64 h-8 w-32 sm:h-8 sm:w-64" placeholder="    buscar">
 <button class="h-8 w-8 bg-sky-400"><i class="fa-duotone fa-solid fa-magnifying-glass"></i></button>
