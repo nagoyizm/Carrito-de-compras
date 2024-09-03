@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo con Tailwind CSS</title>
+    <!doctype html>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/semantic.min.css"/>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+
+<body class="flex flex-col justify-center items-center ">
+<nav class="fixed h-8 bg-black w-full text-white top-0 font-mono flex flex-row justify-center align-center items-center z-10">
+    <h3 class="hidden md:block">Recibe dentro de las proximas 24 hrs dentro de santiago</h3>
+<div class="flex flex-row w-32 align-center sm:align-right  absolute right-32 justify-between">
+    <i class="fa-brands fa-x-twitter"></i>
+    <i class="fa-brands fa-discord"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-solid fa-cart-shopping relative cursor-pointer" id="botonCarro"><div class="carroNav text-sm font-mono hidden rounded-full bg-red-800 absolute w-5 h-5 text-center"></div></i>
+</div>
+</nav>
+
+<div id="overlay" class="overlay fixed top-0 right-0 w-full rounded-md h-full bg-black bg-opacity-50 hidden z-50">
+    <div class="absolute top-0 right-0 w-100 h-30px bg-white shadow-lg flex flex-col items-center justify-between z-100 p-10 m-10">
+        <p id="listadoCompra" class="text-center text-black"></p>
+        <div> 
+        <button id="terminarCompra" class="bg-red-500 text-white p-2 rounded">Terminar Compra</button>
+        <button id="closeOverlay" class="bg-gray-500 text-black p-2 rounded">Seguir Comprando   </button>
+        </div>
+    </div>
+</div>
+
+<header class="w-full h-52 bg-zinc-800 flex items-center justify-center sticky z-0 relative">
+<img class=" h-full w-full object-cover absolute opacity-75" src="./assets/img/banner.jpg" alt="">
+<div class="font-mono text-xl mt-20 absolute text-white tracking-widest sm:text-6xl sm:mt-0">MUSICLUB <i class="fa-solid fa-compact-disc"></i></div>
+
+<div class="flex flex-row align-center justify-center sm:right-10 sm:absolute">
+<input class="bg-white ml-64 h-8 w-32 sm:h-8 sm:w-64" placeholder="    buscar">
+<button class="h-8 w-8 bg-sky-400"><i class="fa-duotone fa-solid fa-magnifying-glass"></i></button>
+</div>
+</header>
+
+<nav class="w-full h-12 bg-gray-700 border border-gray-600 sticky flex content-center flex-row items-center justify-flex-start z-0">
+    
+    <button class="sm:hidden ml-5"><i class="fa-solid fa-bars"></i></button>
+    <div class="ml-40 w-4/5 flex flex-row ">
+    <button class="sm:block hidden text-white w-1/10 h-1/2 font-semibold rounded m-3">Ofertas</button>
+    <button class="sm:block hidden text-white w-1/10 h-1/2 font-semibold rounded m-3">Recien llegados</button>
+    <button class="sm:block hidden text-white w-1/10 h-1/2 font-semibold rounded m-3">Listado</button>
+    <button class="sm:block hidden text-white w-1/10 h-1/2 font-semibold rounded m-3">Equipos</button>
+    <button class="sm:block hidden text-white w-1/10 h-1/2 font-semibold rounded m-3">Merchandise</button>
+    <button class="sm:block hidden text-white w-1/10 h-1/2 font-semibold rounded m-3">Mas vendidos</button>
+    </div>
+</nav>
+
+<section class="flex flex-row justify-items-start w-4/5 mt-5 items-center border border-gray-200 bg-white">
+    <h1 class="p-5 font-bold font-mono w-3/10 text-xl">Recien llegados</h1>
+    <i class="fa-solid fa-headphones"></i>
+</section>
+
+
+<section id="productos" class="w-4/5 my-5 flex flex-wrap justify-center border border-color-gray bg-white">
+    
+</section>
+
+<div class="pagination flex items-center m-6">
+    <button id="prev" class="px-4 py-2 bg-white text-black rounded-md shadow  disabled:opacity-50" disabled>&laquo; <<</button>
+    <span id="pageNumber" class="mx-4 h-10 w-10 text-lg font-semibold border border-black items flex flex-row justify-center items-center"><h5>1</h5></span>
+    <button id="next" class="px-4 py-2 bg-white text-black rounded-md shadow hover:bg-gray-300">>> &raquo;</button>
+</div>
+
+<footer class="bg-gray-200 h-16 mt-5 w-full flex flex-row justify-center items-center">
+    <h5 class="font-mono text-xs sm:text-lg">todos los derechos reservados</h5>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<script src="./assets/js/script.js"></script>
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+</body>
+</html>
