@@ -11,7 +11,7 @@ class Producto {
 // Método para crear la tarjeta de producto
     crearTarjeta() {
     const tarjeta = document.createElement('article');
-    tarjeta.className = 'sm:max-w-1/6 sm:w-1/6 md:1/3 md:max-w-1/3 flex flex-col items-center justify-between h-84 border m-3 rounded text-white border-gray-300';
+    tarjeta.className = 'sm:max-w-1/4 sm:w-1/4 md:w-1/6 md:max-w-1/6  md:m-1 flex flex-col items-center w-1/2 justify-between h-84 border p-2 rounded text-white border-gray-300';
 
     const contenido = `
         <div>
